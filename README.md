@@ -1,12 +1,4 @@
-import os
-from zipfile import ZipFile
 
-# Criar estrutura de diretórios
-base_dir = "portfolio"
-img_dir = os.path.join(base_dir, "img")
-os.makedirs(img_dir, exist_ok=True)
-
-# HTML com dados da Vanessa
 index_html_content = """<!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +11,7 @@ index_html_content = """<!DOCTYPE html>
 </head>
 <body>
     <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Vanessa" class="rounded-circle" width="150" height="150">
+        <img src="foto perfil.jpeg" alt="avatar da Vanessa" class="rounded-circle" width="150" height="150">
         <p class="lead">Eu sou Vanessa_</p>
         <h1>Futura Médica Veterinária</h1>
         <p>Sou estudante do Ensino Médio e tenho o sonho de cursar Medicina Veterinária. 
