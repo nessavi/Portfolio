@@ -1,93 +1,132 @@
-
-index_html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio da Vanessa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vanessa - Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="container text-center">
-        <img src="foto perfil.jpeg" alt="avatar da Vanessa" class="rounded-circle" width="150" height="150">
-        <p class="lead">Eu sou Vanessa_</p>
-        <h1>Futura Médica Veterinária</h1>
-        <p>Sou estudante do Ensino Médio e tenho o sonho de cursar Medicina Veterinária. 
-        Tenho paixão por animais, pelo cuidado com a natureza e gosto muito de aprender coisas novas. 
-        Esse portfólio mostra um pouco sobre mim!</p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge bg-secondary">Comunicativa</p>
-            <p class="badge bg-secondary">Trabalho em equipe</p>
-            <p class="badge bg-secondary">Boa ouvinte</p>
-        </div>
-    </header>
-    <main class="container mt-5">
-        <h2>Meus projetos</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem de um projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">Meu amor pelos animais</h5>
-                        <p class="card-text">Um projeto onde conto sobre como surgiu meu interesse por medicina veterinária.</p>
-                        <a href="#" class="btn btn-primary disabled">Em breve</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="container py-5">
-        <h2>Entre em contato</h2>
-        <p class="my-5 text-center">© Copyright 2024. Produzido por Vanessa</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="Avatar de Vanessa" class="avatar">
+    <h2>Eu sou Vanessa_</h2>
+    <h1>Futura Médica Veterinária</h1>
+    <p>
+      Sou estudante do Ensino Médio e tenho o sonho de cursar Medicina Veterinária. Tenho paixão por animais, pelo cuidado com a natureza e gosto muito de aprender coisas novas. Esse portfólio mostra um pouco sobre mim
+    </p>
+    <h3>Minhas habilidades</h3>
+    <div class="skills">
+      <span>Comunicação</span>
+      <span>Trabalho em grupo</span>
+      <span>Boa ouvinte</span>
+      <span>Criativa</span>
+    </div>
+  </header>
+
+  <main>
+    <h2>Meus projetos</h2>
+    <section class="projects">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180/FFB6C1/000000?text=Minha+Biblioteca" alt="Biblioteca">
+        <h3>Minha Biblioteca: Uma Webpage Personalizada</h3>
+        <p>Uma página web que apresenta uma lista dos meus livros favoritos, com autores, datas e links para compra.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180/000000/00FFFF?text=Inteligência+Artificial" alt="IA">
+        <h3>Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência Artificial</h3>
+        <p>Um jogo interativo explorando os impactos da IA na sociedade, onde o jogador faz escolhas e reflete sobre o futuro.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180/001f3f/7FDBFF?text=Universo+Scratch" alt="Universo">
+        <h3>Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch</h3>
+        <p>Uma experiência interativa educativa sobre astronomia criada com Scratch, com botões e animações divertidas.</p>
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>
-"""
-
-# CSS básico
-style_css_content = """
 body {
-    background-color: #f5f5f5;
-    font-family: 'Segoe UI', sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f9fc;
+  color: #1a1a1a;
+  text-align: center;
 }
 
 header {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  padding: 40px 20px;
 }
 
-.lead {
-    font-weight: bold;
-    color: #6c757d;
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-footer {
-    background-color: #e9ecef;
-    padding: 2rem 1rem;
-    text-align: center;
+h1 {
+  font-size: 2.5rem;
+  color: #14213d;
 }
-"""
 
-# Escrever arquivos
-with open(os.path.join(base_dir, "index.html"), "w", encoding="utf-8") as f:
-    f.write(index_html_content)
+h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
 
-with open(os.path.join(base_dir, "style.css"), "w", encoding="utf-8") as f:
-    f.write(style_css_content)
+h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
 
-# Criar imagens fictícias
-placeholder = b"\x89PNG\r\n\x1a\n"  # Cabeçalho PNG
-for name in ["avatar-perfil.png", "projeto-1.png"]:
-    with open(os.path.join(img_dir, name), "wb") as f:
-        f.write(placeholder)
+.skills {
+  margin-top: 10px;
+}
 
-# Criar ZIP
-with ZipFile("portfolio-vanessa.zip", "w") as zipf:
-    for folder, _, files in os.walk(base_dir):
-        for file in files:
-            path = os.path.join(folder, file)
-            zipf.write(path, os.path.relpath(path, base_dir))
+.skills span {
+  background: #dee2e6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+}
+
+main {
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #14213d;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
