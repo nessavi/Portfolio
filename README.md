@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vanessa - Meu Portfólio</title>
+  <Meu Portfólio>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="Avatar de Vanessa" class="avatar">
+    <img src="[https://cdn-icons-png.flaticon.com/512/4140/4140037.png](https://github.com/nessavi/Portfolio/blob/main/Foto%20perfil.jpeg)" alt="Avatar de Vanessa" class="avatar">
     <h2>Eu sou Vanessa_</h2>
     <h1>Futura Médica Veterinária</h1>
     <p>
